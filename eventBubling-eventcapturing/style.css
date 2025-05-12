@@ -1,0 +1,16 @@
+
+.topDiv{
+background-color: blue;
+margin: 10px;
+border: 10px solid black;
+}
+.midDiv{
+    background-color: red;
+    margin: 10px;
+    border: 10px solid black;
+    }
+.innerDiv{
+background-color: green;
+margin: 10px;
+border: 10px solid black;
+}

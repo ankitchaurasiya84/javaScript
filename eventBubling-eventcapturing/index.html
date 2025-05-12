@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div id="topDiv" class="topDiv"> Outer Div
+        <div id="midDiv" class="midDiv"> Mid Div
+            <div id="innerDiv" class="innerDiv"> Inner Div
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("topDiv").addEventListener("click",()=>{
+            console.log("Top Div");
+        },false) // true for capturing phase
+        document.getElementById("midDiv").addEventListener('click',()=>{
+            console.log("Mid Div");
+        },false) // true for capturing phase
+        document.getElementById("innerDiv").addEventListener('click',()=>{
+            console.log("Inner Div");
+        },false) // true for capturing phase
+       </script>
 </body>
 </html>
