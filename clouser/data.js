@@ -19,9 +19,9 @@ data()()
 // currying
 
 const Curring=(a)=>{
-    let c;
+  
     const sum1=(b)=>{
-        let d;
+       
          console.log(a+b);
     }
     return sum1

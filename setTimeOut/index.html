@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1 id="newd">Counter</h1>
+    </div>
+
+    <script>
+      let count = 0;
+    //   const counter = () => {
+    //     count++;
+    //     if (count == 10) {
+    //       clearInterval(ids);
+    //     }
+    //     document.getElementById("newd").innerHTML = count;
+    //     console.log(count);
+    //   };
+    //   let ids = setInterval(counter, 1000);
+    //-------------------------------------------- setTimeout
+        // const counter = () => {
+        //     count++;
+        //     if (count == 10) {
+        //     clearTimeout(ids);
+        //     }
+        //     document.getElementById("newd").innerHTML = count;
+        //     console.log(count);
+        // };
+        // let ids = setTimeout(counter, 1000);
+//-------------------------------------------using setTimeout to mimic set interval
+        // Using setTimeout to create a loop
+        // This will call the function every second
+        // and will stop after 10 seconds
+        // let count = 0;
+        // function myInterval() {
+        function myInterval() {
+  console.log('Running task...');
+  count++;
+  document.getElementById("newd").innerHTML = count;
+  // Schedule next call
+  setTimeout(myInterval, 1000); // calls itself after 1 second
+}
+
+myInterval(); // start the loop
+
+    </script>
+  </body>
+</html>
