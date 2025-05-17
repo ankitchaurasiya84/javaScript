@@ -16,3 +16,8 @@ function datahandle(event){
     })
     
 }
+
+document.getElementById("id").innerHTML="" 
+document.getElementById("id")
+document.getElementById("id").addEventListener("onClick")
+document

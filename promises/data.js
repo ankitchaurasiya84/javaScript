@@ -23,11 +23,11 @@ const data=[
 const fetchdata=()=>{
     return new Promise((resolve, reject)=>{
         setTimeout(()=>{
-            if(data.length<0){
+            if(data.length>0){
                 resolve(data)
             }
             reject("No data found")
-        })
+        },5000)
     })
 }
 fetchdata().then((res)=>{
