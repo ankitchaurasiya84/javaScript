@@ -209,11 +209,7 @@ const isVisible = (el) => {
 
 ---
 
-Would you like:
 
-* A **PDF version** of this for interview prep?
-* **MCQs or code-based practice questions**?
-* **Real-world DOM project ideas** for hands-on experience?
 
 
 
